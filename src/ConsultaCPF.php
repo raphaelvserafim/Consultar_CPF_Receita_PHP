@@ -182,7 +182,7 @@ class ConsultaCPF
         foreach ($tags as $tag) {
             $count++;
             if ($tag->getAttribute('id') == "imgCaptcha") {
-                return array("status" => true, "img" => $tag->getAttribute('src'));
+                return array("status" => true, "img" => $tag->getAttribute('src')); //BASE64
             }
         }
     }
