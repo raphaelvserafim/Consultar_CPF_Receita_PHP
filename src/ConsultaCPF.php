@@ -9,7 +9,7 @@ class ConsultaCPF
 
     const host_cpf          = 'servicos.receita.fazenda.gov.br';
     const url_captcha       = 'https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublicaSonoro.asp';
-    const pasta_cookie      = 'cookie';
+    const pasta_cookie      = '../cookie';
 
     private $cookie;
 
