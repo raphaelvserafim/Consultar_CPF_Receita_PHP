@@ -1,0 +1,17 @@
+{
+    "name": "cachesistemas/consultacpf",
+    "description": "Consulta CPF no site da Receita Federal",
+    "license": "MIT",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Cachesistemas\\Consultacpf\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "Raphael Serafim",
+        "email": "contratar@cachesistemas.com.br"
+    }],
+    "require": {},
+    "minimum-stability": "dev"
+}
