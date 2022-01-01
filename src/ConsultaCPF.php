@@ -12,7 +12,7 @@ class ConsultaCPF
     const url_consulta_cpf  = 'https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublicaExibir.asp';
     const pasta_cookie      = '../cookie';
     private $cookie;
-   
+
 
     public function __construct()
     {
@@ -81,6 +81,7 @@ class ConsultaCPF
             'CPF'                                   => '',
             'NASCIMENTO'                            => ''
         );
+
         $post = http_build_query($post, '', '&');
 
         $headers = array(
@@ -119,7 +120,7 @@ class ConsultaCPF
 
         for ($i = 0; $i < count($campos); $i++) {
             $html2 = strstr($html, utf8_decode($campos[$i]));
-            $resultado[] = trim($this->pega_o_que_interessa(utf8_decode($campos[$i]), '</b>', $html2));
+            $resultado[] = trim($this->tratando(utf8_decode($campos[$i]), '</b>', $html2));
             $html = $html2;
         }
 
@@ -143,7 +144,7 @@ class ConsultaCPF
 
 
 
-    public function pega_o_que_interessa($inicio, $fim, $total)
+    public function tratando($inicio, $fim, $total)
     {
         $interesse = str_replace($inicio, '', str_replace(strstr(strstr($total, $inicio), $fim), '', strstr($total, $inicio)));
         return ($interesse);
@@ -187,4 +188,3 @@ class ConsultaCPF
         }
     }
 }
-
