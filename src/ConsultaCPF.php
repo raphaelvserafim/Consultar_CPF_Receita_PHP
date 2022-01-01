@@ -1,6 +1,6 @@
 <?php
 
-namespace Cachesistemas\Consultacpf;
+namespace Cachesistemas\ConsultaCPF;
 
 use DOMDocument;
 
@@ -70,7 +70,7 @@ class ConsultaCPF
 
 
 
-    public function getHtmlCPF($cpf, $datanascim, $captcha)
+    public function consultandoCPF($cpf, $datanascim, $captcha)
     {
 
         $post = array(
