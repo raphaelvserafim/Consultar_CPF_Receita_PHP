@@ -68,7 +68,7 @@ echo json_encode($result);
 <a href="https://wa.me/5566996852025"> 
 <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> 
 </a>
-<a href="https://www.instagram.com/raphaelvserafim/"> 
+<a href="https://www.instagram.com/raphaelvserafim"> 
 <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /> 
 </a>
 
