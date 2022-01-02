@@ -5,7 +5,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Cachesistemas\\Consultacpf\\": "src/"
+            "Cachesistemas\\ConsultaCPF\\": "src/"
         }
     },
     "authors": [{
