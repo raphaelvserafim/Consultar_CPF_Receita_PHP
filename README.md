@@ -16,7 +16,7 @@ composer require cachesistemas/consultacpf
 
 include_once 'vendor/autoload.php';
 
-use Cachesistemas\ConsultaCPF;
+use Cachesistemas\ConsultaCPF\ConsultaCPF;
 
 $consulta    = new ConsultaCPF();
 
@@ -36,7 +36,7 @@ if ($result["status"]) {
 
 include_once 'vendor/autoload.php';
 
-use Cachesistemas\ConsultaCPF;
+use Cachesistemas\ConsultaCPF\ConsultaCPF;
 
 $consulta    = new ConsultaCPF();
 
