@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Cachesistemas\ConsultaCPF;
 
 use DOMDocument;
@@ -10,16 +11,24 @@ class ConsultaCPF
     const host_cpf          = 'servicos.receita.fazenda.gov.br';
     const url_captcha       = 'https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublicaSonoro.asp';
     const url_consulta_cpf  = 'https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublicaExibir.asp';
-    const pasta_cookie      = '../cookie';
-    private $cookie;
 
+
+    private $cookie;
 
     public function __construct()
     {
-        $this->cookie  = self::pasta_cookie .  '/cookie_cpf_' . session_id();
+        @session_start();
+        $this->cookie  = $this->pastaCookie() .  '/cookie_cpf_' . session_id();
     }
 
-    public function Setcookie()
+
+    private function pastaCookie()
+    {
+        return  $_SERVER["DOCUMENT_ROOT"] . "/vendor/cachesistemas/consultacpf/cookie";
+    }
+
+
+    public function setcookie()
     {
 
         if (!file_exists($this->cookie)) {
@@ -155,7 +164,7 @@ class ConsultaCPF
     public function imgRecaptchaCPF()
     {
 
-        $this->Setcookie();
+        $this->setcookie();
 
         $headers = array(
             0 => self::host_cpf,
