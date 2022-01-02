@@ -1,5 +1,7 @@
 <?php
-
+/*
+  @raphaelvserafim 
+*/
 
 namespace Cachesistemas\ConsultaCPF;
 
@@ -22,13 +24,13 @@ class ConsultaCPF
     }
 
 
-    private function pastaCookie()
+    public function pastaCookie()
     {
-        if (!is_dir("nome_pasta")) {
-            mkdir($_SERVER["DOCUMENT_ROOT"] . "/vendor/cachesistemas/consultacpf/cookie/", 0777, true);
+        if (!is_dir($_SERVER["DOCUMENT_ROOT"] . "/cookie")) {
+            mkdir($_SERVER["DOCUMENT_ROOT"] . "/cookie", 0777, true);
         }
 
-        return  $_SERVER["DOCUMENT_ROOT"] . "/vendor/cachesistemas/consultacpf/cookie";
+        return  $_SERVER["DOCUMENT_ROOT"] . "/cookie";
     }
 
 
