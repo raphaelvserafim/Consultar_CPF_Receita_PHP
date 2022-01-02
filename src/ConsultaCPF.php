@@ -24,6 +24,10 @@ class ConsultaCPF
 
     private function pastaCookie()
     {
+        if (!is_dir("nome_pasta")) {
+            mkdir($_SERVER["DOCUMENT_ROOT"] . "/vendor/cachesistemas/consultacpf/cookie/", 0777, true);
+        }
+
         return  $_SERVER["DOCUMENT_ROOT"] . "/vendor/cachesistemas/consultacpf/cookie";
     }
 
