@@ -63,3 +63,9 @@ echo json_encode($result);
 23.711.695/0001-15 
 
 ```
+- [Contato]  +55 66 99685-2025
+
+<a href="https://wa.me/5566996852025"> 
+<img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />  
+</a>
+
