@@ -1,6 +1,6 @@
 {
     "name": "cachesistemas/consultacpf",
-    "description": "Consulta CPF no site da Receita Federal",
+    "description": "Consultar CPF no site da Receita Federal PHP",
     "license": "MIT",
     "type": "project",
     "autoload": {
