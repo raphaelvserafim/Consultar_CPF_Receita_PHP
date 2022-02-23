@@ -11,7 +11,7 @@ composer require cachesistemas/consultacpf
 
 
 ###### imgRecaptcha.php
-```
+```php
 <?php 
 
 include_once 'vendor/autoload.php';
@@ -31,7 +31,7 @@ if ($result["status"]) {
 
 
 ###### consultandoCPF.php
-```
+```php
 <?php
 
 include_once 'vendor/autoload.php';
@@ -47,7 +47,7 @@ echo json_encode($result);
 
 ```
 ###### Exemplo retorno  JSON 
-```
+```json
 {
 "status":true,
 "cpf":"000.000.000-00",
