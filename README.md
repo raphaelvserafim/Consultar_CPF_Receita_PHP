@@ -15,7 +15,7 @@ Atualmente, a Receita possui diversas proteções e instabilidades que podem cau
 
 Por isso, hoje recomendo utilizar a API oficializada da plataforma:
 
-👉 [Entrar API](https://entrar.api.br)
+👉 [Consultar CPF API](https://entrar.api.br)
 
 ## ✅ Por que usar a Entrar API?
 
